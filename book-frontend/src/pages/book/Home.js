@@ -11,14 +11,17 @@ const Home = () => {
     })
       .then((res) => res.json())
       .then((res) => {
-        console.log(1, res);
         setBooks(res);
       }); // 비동기 함수
   }, []);
 
   return (
     <div>
-      <BookItem />
+      {books.map((book) => (
+        <div className="m-2" key={book.id}>
+          <BookItem book={book} />
+        </div>
+      ))}
     </div>
   );
 };

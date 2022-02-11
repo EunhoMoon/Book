@@ -46,7 +46,7 @@ public class BookService {
 	@Transactional
 	public String deleteBookInfo(Long id) {
 		bookRepository.deleteById(id);
-		return "oK";
+		return "ok";
 	}
 	
 }

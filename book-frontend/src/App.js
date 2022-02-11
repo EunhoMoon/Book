@@ -16,7 +16,7 @@ function App() {
       <Container>
         <Route path={'/'} exact={true} component={Home} />
         <Route path={'/saveForm'} exact={true} component={SaveForm} />
-        <Route path={'/detail/:id'} exact={true} component={Detail} />
+        <Route path={'/book/:id'} exact={true} component={Detail} />
         <Route path={'/loginForm'} exact={true} component={LoginForm} />
         <Route path={'/joinForm'} exact={true} component={JoinForm} />
         <Route path={'/updateForm/:id'} exact={true} component={UpdateForm} />
